@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container{
+    width: 90%;
+    margin: auto;
+}
+img{
+    width: 100%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btntranslate{
+    transform: translateY(400%);
+    opacity: 0;
+    transition: 0.5s;
+    color: white !important;
+}
+
+.hoverCart:hover .btntranslate{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.hoverCart {
+transition: 0.5s;}
+.hoverCart:hover {
+    box-shadow: 1px 1px 10px #4fa74f;
+}
+.Categorie:hover {
+    box-shadow: 1px 1px 10px #4fa74f;
+}
+.Categorie{
+ border: 0.5px solid rgb(128, 128, 128,0.5);
+ transition: 0.5s;
+}
+
+.custom-dot {
+    width: 15px;
+    height: 7px;
+    background-color: #D6D6D6;
+    border-radius: 20%;
+    margin: 0 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+
+  .custom-dot:hover {
+    background-color: #869791;
+  }
+
+
+.custom-dot2 {
+    width: 15px;
+    height: 7px;
+    background-color: #D6D6D6;
+    border-radius: 20%;
+    margin: 0 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+ 
+  .custom-dot2:hover {
+    background-color: #869791;
+  }
+
+nav ul li{
+    transition: 0.5s;
+}
+nav ul li:hover{
+    color:black;
+}
+  .active{
+    color: black;
+    transition: 0.5s;
+  }
+ 
+
+
+
+
+
+
+
+
+
+  /* Add these to your CSS file */
+.navbar-menu {
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.navbar-menu.open {
+  max-height: 100vh; /* Adjust based on your content */
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .navbar-menu {
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+  }
+}
